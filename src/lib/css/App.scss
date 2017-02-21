@@ -1,0 +1,126 @@
+// vendor libraries
+@import './bootstrap/bootstrap.min.css';
+@import './../fonts/font-awesome-4.7.0/scss/font-awesome.scss';
+
+// variables
+@import 'utilities/_variables';
+
+// components
+@import './../../components/header/Header.scss';
+@import './../../components/spaces/edit-space/EditSpace.scss';
+@import './../../components/spaces/view-space/ViewSpaces.scss';
+
+
+// ======= BODY STYLES =====
+
+html, body {
+  height: 100%;
+}
+
+body {
+  background: linear-gradient(to right top, #7a77fc, #8c22ac, #fe74ae) fixed no-repeat;
+  font: 15px/150% 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  margin: 0;
+  color: #fff;
+}
+
+// ======== FONTS ========
+
+@font-face {
+  font-family: 'vag_light';
+  src: url('../fonts/project-fonts/vag_rounded_light-webfont.woff2') format('woff2'),
+  url('../fonts/project-fonts/vag_rounded_light-webfont.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+h1, h2, h3, h4, h5,
+label, legend {
+  font-family: 'vag_light', Helvetica,Helvetica,Arial,sans-serif;
+}
+
+.grey-text {
+  color: $grey;
+}
+
+// ======== FORMS ========
+
+select {
+  border: solid 2px $blue;
+  margin-top: 3px;
+}
+
+.btn.select-button {
+  padding: 4px 10px 1px;
+  margin-top: -2px;
+}
+
+.checkbox-group .form-check-inline {
+  margin-left: 0;
+}
+
+.form-check-label {
+  padding-left: 0;
+  padding-right: 1.25rem;
+}
+
+//  ======== BUTTONS ========
+
+.btn {
+  font-family: 'vag_light', Helvetica,Helvetica,Arial,sans-serif;
+  font-size: 13px;
+  text-transform: uppercase;
+  padding: .5rem 1rem 0.25rem;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-primary {
+  background-color: $purple;
+  border-color: $light-purple;
+
+  &:hover {
+    background-color: darken($purple, 5%);
+  }
+}
+
+.btn-danger {
+  background-color: $red;
+  border-color: $light-red;
+
+  &:hover {
+    background-color: darken($red, 5%);
+  }
+}
+
+.btn-success {
+  background-color: $green;
+  border-color: $light-green;
+
+  &:hover {
+    background-color: darken($green, 5%);
+  }
+}
+
+.btn-info {
+  background-color: $blue;
+  border-color: $light-blue;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+  }
+}
+
+//  ======== ANIMATIONS ========
+
+@keyframes fadein {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes fadeout {
+  from { opacity: 1; }
+  to   { opacity: 0; }
+}

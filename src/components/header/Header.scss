@@ -1,0 +1,35 @@
+.altspace-header {
+  padding: 20px 35px 0;
+  overflow: hidden;
+  margin: 0 auto;
+  max-width: 990px;
+
+  .altspace-logo {
+    width: 214px;
+    margin-bottom: 65px;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  h1 {
+    float: left;
+  }
+
+  .create-button {
+    float: right;
+    margin-top: 8px;
+  }
+}
+
+.altspace-alert {
+  padding: 20px 18px;
+  margin: 20px auto;
+  animation: fadein 700ms;
+  max-width: 926px;
+
+  p {
+    margin-bottom: 0;
+  }
+}

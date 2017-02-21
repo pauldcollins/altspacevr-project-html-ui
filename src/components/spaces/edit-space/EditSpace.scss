@@ -1,0 +1,123 @@
+.edit-space {
+  padding: 0 20px;
+  animation: fadein 700ms;
+
+  form {
+    margin: 20px auto 65px;
+    box-shadow: -4px 10px 30px 7px rgba(0,0,0,0.14);
+    max-width: 990px;
+  }
+
+  .container {
+    width: 100%;
+  }
+
+  header {
+    border-radius: .5rem .5rem 0 0;
+    background: #242c46;
+    border-bottom: solid 1px #353d55;
+    padding: 20px 35px;
+    color: #ced3e1;
+
+    h2 {
+      color: #8b94ab;
+
+      em {
+        color: white;
+        font-style: normal;
+      }
+    }
+
+    p {
+      margin-bottom: 0;
+    }
+  }
+
+  main {
+    padding: 30px 20px;
+    box-shadow: inset 0px 36px 47px -17px rgba(0,0,0,0.20);
+    background: #2b324f;
+
+    fieldset {
+      margin: 20px 0 0;
+      padding: 10px 0;
+    }
+
+    .checkbox-group {
+      padding-bottom: 10px;
+      border-bottom: solid 1px #353d55;
+
+      input[type=checkbox] {
+        margin-right: 10px;
+      }
+    }
+  }
+
+  .member-area {
+    border: solid 1px #626dff;
+    min-height: 254px;
+    border-radius: .5rem;
+    padding: 20px;
+
+    legend {
+      width: auto;
+    }
+
+    .member-list {
+      border-bottom: solid 1px #353d55;
+      padding-bottom: 15px;
+      margin-bottom: 27px;
+
+      ul {
+        list-style: none;
+        margin: 0 0 20px;
+        padding: 0;
+
+        li {
+          padding: 0;
+          animation: fadein 700ms;
+        }
+
+        .remove-link {
+          font-size: 15px;
+          color: #f06191;
+        }
+      }
+    }
+
+    .add-member {
+      padding-bottom: 0;
+      margin-bottom: 0;
+
+      legend {
+        font-size: 1.1rem;
+      }
+    }
+  }
+
+  footer {
+    border-radius: 0 0 .5rem .5rem;
+    background: #242c46;
+    border-top: solid 1px #353d55;
+    border-bottom: solid 1px #353d55;
+    padding: 20px 20px;
+  }
+}
+
+// change add member height for certain resolution
+// TODO: make two columns in member area use flex box instead for uniform heights
+@media only screen and (min-width : 992px) and (max-width : 1199px) {
+  .edit-space {
+    .member-area {
+      min-height: 285px;
+    }
+  }
+}
+
+@media only screen and (min-width : 991px) {
+  .edit-space {
+    main.row {
+      padding-bottom: 20px;
+    }
+  }
+}
