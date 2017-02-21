@@ -64,6 +64,7 @@ Given more time, there are a TON of things I’d love to add: Here is a non-exha
 
 - Breaking the EditSpacesForm.js file down into more components
 - More comprehensive error handling for api calls (IE: promises)
+- Validation and error messaging
 - A number of repeated attempts if the content is offline the first time
 - Unit and functional tests
 - A constants file for all text, so we could translate later
