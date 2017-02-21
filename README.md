@@ -18,8 +18,8 @@ The Project can now be browsed at either **http://localhost:3000/** or **http://
 
 
 ## Project requirements
-Node 4+
-Google Chrome (latest)
+- Node 4+
+- Google Chrome (latest)
 
 
 ## The architecture
