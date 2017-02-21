@@ -17,6 +17,7 @@ import './lib/css/App.css';
 ReactDOM.render(
   <Router>
     <div className="container">
+      <Route exact path="/" component={ViewSpacesContainer}/>
       <Route exact path="/spaces" component={ViewSpacesContainer}/>
       <Route exact path="/edit/:id" component={EditSpacesContainer}/>
       <Route path="/create" component={EditSpacesContainer}/>
