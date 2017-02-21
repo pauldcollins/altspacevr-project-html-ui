@@ -4,6 +4,7 @@ This project is a fork from the [AltspaceVR Programming Project]
 This project was bootstrapped with [Create React App]
 (https://github.com/facebookincubator/create-react-app).
 
+
 ## Installation
 To install, first clone the repository then:
 
@@ -15,9 +16,11 @@ npm start
 
 The Project can now be browsed at either **http://localhost:3000/** or **http://0.0.0.0:3000/**
 
+
 ## Project requirements
 Node 4+
 Google Chrome (latest)
+
 
 ## The architecture
 This project makes use of the [Presentational and Container components pattern]
@@ -32,6 +35,7 @@ I’ve modified the original data file to make it ES6 compliant, so I can now im
 
 The project uses Babel for ES6 support.
 
+
 ## Design and animation
 The site has been designed to be responsive for different screen sizes. However it has only been tesed on Chrome as per the original project requirements.
 
@@ -42,15 +46,18 @@ All animation times sit within the maximum recommended 700ms, based on the [Huma
 
 Currently the view spaces page uses Flexbox. I would want to work out how many spaces there are likely to be on any given page, as one or two would look quite sparse on their own, but if the content was likely to spread vertically by a large amount, I feel the new CSS Grids would be a better solution. They are currently experimental and not supported however I believe they can be turned on in Chromium 😃 
 
+
 ## User Experience
 The Add Members UI assumes that there always be a large number of users to choose from, hence the select box, and only a handful of members, which is why they are in an unordered list. Further user research might suggest different and the UI would be modified to cater for the amount of content.
 
 Currently people return to the homepage after editing or creating a space. Based on research, if people would be often editing multiple spaces at the same time, they could click next after editing one or select from a drop down. 
 
+
 ## Accessibility
 Where images are used to convey information, such as the remove icon for the member list, hidden screen reader only text is provided.
 
 All form inputs have corresponding labels or legend tags, to ensure screen reader support.
+  
   
 ## Enhancements, Improvements and optimisations
 Given more time, there are a TON of things I’d love to add: Here is a non-exhaustive list of ideas:
