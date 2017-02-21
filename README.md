@@ -8,10 +8,12 @@ This project was bootstrapped with [Create React App]
 To install, first clone the repository then:
 
 ```
-cd Altspace-VR-App
+cd altspacevr-project-html-ui
 npm install
 npm start
 ```
+
+The Project can now be browsed at either **http://localhost:3000/** or **http://0.0.0.0:3000/**
 
 ## Project requirements
 Node 4+
